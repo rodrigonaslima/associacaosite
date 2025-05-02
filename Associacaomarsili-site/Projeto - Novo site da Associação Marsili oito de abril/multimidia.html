@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimídia - Associação Marsili</title>
+    
+    <meta name="description" content="Explore fotos, vídeos e materiais sobre o trabalho da Associação Marsili. Conheça nossas ações e o impacto que causamos através de conteúdo multimídia.">
+    <meta name="keywords" content="fotos associação marsili, vídeos projetos sociais, galeria ação social, multimídia, documentário">
+    
+    <meta property="og:title" content="Galeria Multimídia - Associação Marsili">
+    <meta property="og:description" content="Conheça o trabalho da Associação Marsili através de nossas fotos, vídeos e materiais informativos.">
+    <meta property="og:image" content="https://associacaomarsili.org/image/compartilhamento-multimidia.jpg"> 
+    <meta property="og:url" content="https://associacaomarsili.org/multimidia.html"> 
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css"> <link rel="stylesheet" href="css/style.css"> </head>
+<body>
+    <div id="preloader">
+        <div class="spinner"></div>
+    </div>
+
+    <div id="navbar-placeholder"></div>
+
+    <main>
+        <section class="page-header multimedia-header">
+            <div class="container text-center" data-aos="fade-up">
+                <h1>Multimídia</h1>
+                <p class="lead">Imagens que contam histórias de transformação</p>
+            </div>
+        </section>
+
+        <section class="py-5 multimedia-tabs">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12" data-aos="fade-up">
+                        <ul class="nav nav-pills mb-5 justify-content-center multimedia-nav flex-wrap" id="multimediaTab" role="tablist"> 
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="photos-tab" data-bs-toggle="pill" data-bs-target="#photos" type="button" role="tab" aria-controls="photos" aria-selected="true">
+                                    <i class="bi bi-image"></i> Galeria de Fotos
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="videos-tab" data-bs-toggle="pill" data-bs-target="#videos" type="button" role="tab" aria-controls="videos" aria-selected="false">
+                                    <i class="bi bi-play-circle"></i> Vídeos
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="documents-tab" data-bs-toggle="pill" data-bs-target="#documents" type="button" role="tab" aria-controls="documents" aria-selected="false">
+                                    <i class="bi bi-file-earmark-text"></i> Materiais
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="press-tab" data-bs-toggle="pill" data-bs-target="#press" type="button" role="tab" aria-controls="press" aria-selected="false">
+                                    <i class="bi bi-newspaper"></i> Na Mídia
+                                </button>
+                            </li>
+                        </ul>
+                        
+                        <div class="tab-content" id="multimediaTabContent">
+                            <div class="tab-pane fade show active" id="photos" role="tabpanel" aria-labelledby="photos-tab">
+                                <div class="gallery-filter mb-4 text-center" data-aos="fade-up"> 
+                                    <div class="btn-group flex-wrap justify-content-center" role="group"> 
+                                        <button type="button" class="btn btn-outline-primary active" data-filter="*">Todos</button>
+                                        <button type="button" class="btn btn-outline-primary" data-filter=".eventos">Eventos</button>
+                                        <button type="button" class="btn btn-outline-primary" data-filter=".projetos">Projetos</button>
+                                        <button type="button" class="btn btn-outline-primary" data-filter=".voluntarios">Voluntários</button>
+                                        <button type="button" class="btn btn-outline-primary" data-filter=".infraestrutura">Infraestrutura</button>
+                                    </div>
+                                </div>
+                                
+                                <div class="row g-4 gallery-container" data-aos="fade-up">
+                                    <div class="col-lg-4 col-md-6 gallery-item eventos">
+                                        <a href="image/galeria/grande1.jpg" class="glightbox" data-gallery="gallery-marsili" data-title="Festa de Natal">
+                                            <div class="gallery-box">
+                                                <img src="image/galeria/thumb1.jpg" alt="Festa de Natal" class="img-fluid" loading="lazy">
+                                                <div class="gallery-info">
+                                                    <h5 class="h6">Festa de Natal</h5> <p class="small">Dezembro 2022</p>
+                                                    <div class="gallery-icon"><i class="bi bi-plus-lg"></i></div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 gallery-item projetos">
+                                         <a href="image/galeria/grande2.jpg" class="glightbox" data-gallery="gallery-marsili" data-title="Aula de reforço escolar">
+                                            <div class="gallery-box">
+                                                <img src="image/galeria/thumb2.jpg" alt="Aula de reforço escolar" class="img-fluid" loading="lazy">
+                                                <div class="gallery-info">
+                                                    <h5 class="h6">Educação</h5><p class="small">Março 2023</p>
+                                                     <div class="gallery-icon"><i class="bi bi-plus-lg"></i></div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                     <div class="col-lg-4 col-md-6 gallery-item voluntarios">
+                                         <a href="image/galeria/grande3.jpg" class="glightbox" data-gallery="gallery-marsili" data-title="Equipe de voluntários">
+                                            <div class="gallery-box">
+                                                <img src="image/galeria/thumb3.jpg" alt="Equipe de voluntários" class="img-fluid" loading="lazy">
+                                                <div class="gallery-info">
+                                                    <h5 class="h6">Força Voluntária</h5><p class="small">Abril 2023</p>
+                                                     <div class="gallery-icon"><i class="bi bi-plus-lg"></i></div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                     <div class="col-lg-4 col-md-6 gallery-item projetos">
+                                         <a href="image/galeria/grande4.jpg" class="glightbox" data-gallery="gallery-marsili" data-title="Oficina de capacitação">
+                                            <div class="gallery-box">
+                                                <img src="image/galeria/thumb4.jpg" alt="Oficina de capacitação" class="img-fluid" loading="lazy">
+                                                <div class="gallery-info">
+                                                    <h5 class="h6">Capacitação Jovem</h5><p class="small">Maio 2023</p>
+                                                     <div class="gallery-icon"><i class="bi bi-plus-lg"></i></div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                     <div class="col-lg-4 col-md-6 gallery-item infraestrutura">
+                                         <a href="image/galeria/grande5.jpg" class="glightbox" data-gallery="gallery-marsili" data-title="Sala de informática">
+                                            <div class="gallery-box">
+                                                <img src="image/galeria/thumb5.jpg" alt="Sala de informática" class="img-fluid" loading="lazy">
+                                                <div class="gallery-info">
+                                                    <h5 class="h6">Centro Digital</h5><p class="small">Junho 2023</p>
+                                                     <div class="gallery-icon"><i class="bi bi-plus-lg"></i></div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                     <div class="col-lg-4 col-md-6 gallery-item eventos">
+                                         <a href="image/galeria/grande6.jpg" class="glightbox" data-gallery="gallery-marsili" data-title="Formatura">
+                                            <div class="gallery-box">
+                                                <img src="image/galeria/thumb6.jpg" alt="Formatura" class="img-fluid" loading="lazy">
+                                                <div class="gallery-info">
+                                                    <h5 class="h6">Formatura 2023</h5><p class="small">Julho 2023</p>
+                                                     <div class="gallery-icon"><i class="bi bi-plus-lg"></i></div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                     <div class="col-lg-4 col-md-6 gallery-item voluntarios">
+                                         <a href="image/galeria/grande7.jpg" class="glightbox" data-gallery="gallery-marsili" data-title="Voluntários pintando">
+                                            <div class="gallery-box">
+                                                <img src="image/galeria/thumb7.jpg" alt="Voluntários pintando" class="img-fluid" loading="lazy">
+                                                <div class="gallery-info">
+                                                    <h5 class="h6">Revitalização</h5><p class="small">Agosto 2023</p>
+                                                    <div class="gallery-icon"><i class="bi bi-plus-lg"></i></div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                     <div class="col-lg-4 col-md-6 gallery-item infraestrutura">
+                                         <a href="image/galeria/grande8.jpg" class="glightbox" data-gallery="gallery-marsili" data-title="Playground">
+                                            <div class="gallery-box">
+                                                <img src="image/galeria/thumb8.jpg" alt="Playground" class="img-fluid" loading="lazy">
+                                                <div class="gallery-info">
+                                                    <h5 class="h6">Espaço Recreativo</h5><p class="small">Setembro 2023</p>
+                                                    <div class="gallery-icon"><i class="bi bi-plus-lg"></i></div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                     <div class="col-lg-4 col-md-6 gallery-item projetos">
+                                         <a href="image/galeria/grande9.jpg" class="glightbox" data-gallery="gallery-marsili" data-title="Atividade cultural">
+                                            <div class="gallery-box">
+                                                <img src="image/galeria/thumb9.jpg" alt="Atividade cultural" class="img-fluid" loading="lazy">
+                                                <div class="gallery-info">
+                                                    <h5 class="h6">Arte e Cultura</h5><p class="small">Outubro 2023</p>
+                                                    <div class="gallery-icon"><i class="bi bi-plus-lg"></i></div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                
+                                <div class="text-center mt-5" data-aos="fade-up">
+                                    <button class="btn btn-primary" id="loadMorePhotos">Carregar Mais Fotos</button>
+                                </div>
+                            </div>
+                            
+                            <div class="tab-pane fade" id="videos" role="tabpanel" aria-labelledby="videos-tab">
+                                <div class="row mb-5" data-aos="fade-up"> 
+                                    <div class="col-lg-10 mx-auto">
+                                        <div class="featured-video">
+                                            <div class="ratio ratio-16x9">
+                                                <iframe src="https://www.youtube.com/watch?v=VIDEO_ID_18" title="Vídeo institucional da Associação Marsili" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+                                            </div>
+                                            <div class="featured-video-info mt-3 p-3 bg-light rounded"> 
+                                                <h3 class="h5">18 Anos Transformando Vidas</h3>
+                                                <p class="small mb-0">Documentário sobre a trajetória da Associação Marsili.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="row g-4" data-aos="fade-up"> 
+                                    <div class="col-lg-4 col-md-6 mb-4">
+                                        <div class="video-card h-100">
+                                            <div class="video-thumbnail">
+                                                <img src="image/videos/thumb1.jpg" alt="Depoimento Maria" class="img-fluid" loading="lazy">
+                                                <a href="https://www.youtube.com/watch?v=VIDEO_ID_19" class="video-play-btn glightbox-video" data-type="video"> 
+                                                    <i class="bi bi-play-fill"></i>
+                                                </a>
+                                            </div>
+                                            <div class="video-info">
+                                                <h4 class="h6">Depoimento: A História de Maria</h4>
+                                                <div class="video-meta">
+                                                    <span><i class="bi bi-calendar"></i> Out 2023</span><span><i class="bi bi-clock"></i> 4:32</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 mb-4">
+                                        <div class="video-card h-100">
+                                            <div class="video-thumbnail">
+                                                <img src="image/videos/thumb2.jpg" alt="Projeto Capacita Jovem" class="img-fluid" loading="lazy">
+                                                <a href="https://www.youtube.com/watch?v=VIDEO_ID_20" class="video-play-btn glightbox-video" data-type="video"> 
+                                                    <i class="bi bi-play-fill"></i>
+                                                </a>
+                                            </div>
+                                            <div class="video-info">
+                                                 <h4 class="h6">Projeto Capacita Jovem</h4>
+                                                 <div class="video-meta">
+                                                    <span><i class="bi bi-calendar"></i> Set 2023</span><span><i class="bi bi-clock"></i> 5:47</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                     <div class="col-lg-4 col-md-6 mb-4">
+                                        <div class="video-card h-100">
+                                            <div class="video-thumbnail">
+                                                <img src="image/videos/thumb3.jpg" alt="Um Dia na Associação" class="img-fluid" loading="lazy">
+                                                <a href="https://www.youtube.com/watch?v=VIDEO_ID_21" class="video-play-btn glightbox-video" data-type="video"> 
+                                                    <i class="bi bi-play-fill"></i>
+                                                </a>
+                                            </div>
+                                            <div class="video-info">
+                                                 <h4 class="h6">Um Dia na Associação</h4>
+                                                 <div class="video-meta">
+                                                    <span><i class="bi bi-calendar"></i> Ago 2023</span><span><i class="bi bi-clock"></i> 8:15</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                     </div>
+                                
+                                <div class="youtube-channel mt-5 text-center" data-aos="fade-up">
+                                    <h3 class="h4">Visite Nosso Canal no YouTube</h3>
+                                    <p>Inscreva-se e acompanhe todas as nossas novidades em vídeo</p>
+                                     <a href="https://www.youtube.com/watch?v=VIDEO_ID_22" class="btn btn-danger mt-3" target="_blank" rel="noopener noreferrer"> 
+                                        <i class="bi bi-youtube"></i> Acessar Canal
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <div class="tab-pane fade" id="documents" role="tabpanel" aria-labelledby="documents-tab">
+                                 <div class="row" data-aos="fade-up">
+                                    <div class="col-lg-8 mx-auto">
+                                        <div class="documents-intro text-center mb-5">
+                                            <h3 class="section-title">Materiais Informativos</h3>
+                                            <p>Acesse e baixe nossos materiais sobre os projetos e iniciativas.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row g-4" data-aos="fade-up">
+                                     <div class="col-lg-4 col-md-6 mb-4">
+                                        <div class="document-card h-100"> 
+                                            <div class="document-icon"> <i class="bi bi-file-earmark-pdf"></i> </div>
+                                            <div class="document-info d-flex flex-column"> 
+                                                <h4 class="h6">Relatório Anual 2022</h4>
+                                                <p class="small flex-grow-1">Resumo das atividades, projetos e resultados do último ano.</p> 
+                                                <div class="document-meta">
+                                                    <span><i class="bi bi-calendar"></i> Jan 2023</span>
+                                                    <span><i class="bi bi-file-earmark"></i> PDF</span>
+                                                </div>
+                                                <a href="documents/relatorio-anual-2022.pdf" class="btn btn-outline-primary mt-auto" download> 
+                                                    <i class="bi bi-download"></i> Download
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                     <div class="col-lg-4 col-md-6 mb-4">
+                                         <div class="document-card h-100">
+                                            <div class="document-icon"> <i class="bi bi-file-earmark-text"></i> </div>
+                                            <div class="document-info d-flex flex-column">
+                                                <h4 class="h6">Apresentação Institucional</h4>
+                                                <p class="small flex-grow-1">Conheça nossa história, missão, valores e projetos.</p>
+                                                <div class="document-meta">
+                                                    <span><i class="bi bi-calendar"></i> Mar 2023</span>
+                                                    <span><i class="bi bi-file-earmark"></i> PDF</span>
+                                                </div>
+                                                <a href="documents/apresentacao-institucional.pdf" class="btn btn-outline-primary mt-auto" download> 
+                                                    <i class="bi bi-download"></i> Download
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                     <div class="col-lg-4 col-md-6 mb-4">
+                                         <div class="document-card h-100">
+                                            <div class="document-icon"> <i class="bi bi-newspaper"></i> </div>
+                                            <div class="document-info d-flex flex-column">
+                                                <h4 class="h6">Newsletter - Q2 2023</h4>
+                                                <p class="small flex-grow-1">Informativo sobre atividades e notícias recentes.</p>
+                                                <div class="document-meta">
+                                                    <span><i class="bi bi-calendar"></i> Jul 2023</span>
+                                                    <span><i class="bi bi-file-earmark"></i> PDF</span>
+                                                </div>
+                                                <a href="documents/newsletter-q2-2023.pdf" class="btn btn-outline-primary mt-auto" download> 
+                                                    <i class="bi bi-download"></i> Download
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                     </div>
+                            </div>
+                            
+                            <div class="tab-pane fade" id="press" role="tabpanel" aria-labelledby="press-tab">
+                                 <div class="row" data-aos="fade-up">
+                                    <div class="col-lg-8 mx-auto">
+                                        <div class="press-intro text-center mb-5">
+                                             <h3 class="section-title">Associação Marsili na Mídia</h3>
+                                            <p>Confira reportagens, entrevistas e matérias sobre nosso trabalho.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row g-4" data-aos="fade-up">
+                                     <div class="col-lg-6 mb-4">
+                                        <div class="press-card h-100"> 
+                                            <div class="row g-0 h-100">
+                                                <div class="col-md-4">
+                                                    <img src="image/press/midia1.jpg" class="img-fluid rounded-start h-100 object-fit-cover" alt="Logo Jornal da Cidade">
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <div class="card-body d-flex flex-column"> 
+                                                        <div class="press-date small text-muted">15 de Outubro, 2023</div>
+                                                        <h4 class="h6">Projeto de educação transforma comunidade</h4>
+                                                        <p class="small flex-grow-1">Reportagem sobre os resultados do nosso programa educacional.</p>
+                                                        <div class="press-source small">Jornal da Cidade</div>
+                                                        <a href="#" class="btn btn-sm btn-outline-primary mt-auto" target="_blank" rel="noopener noreferrer">Ler matéria</a> 
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                     <div class="col-lg-6 mb-4">
+                                         <div class="press-card h-100">
+                                            <div class="row g-0 h-100">
+                                                <div class="col-md-4">
+                                                    <img src="image/press/midia2.jpg" class="img-fluid rounded-start h-100 object-fit-cover" alt="Logo Portal Notícias Sociais">
+                                                </div>
+                                                <div class="col-md-8">
+                                                     <div class="card-body d-flex flex-column">
+                                                        <div class="press-date small text-muted">28 de Setembro, 2023</div>
+                                                        <h4 class="h6">Associação Marsili completa 18 anos</h4>
+                                                        <p class="small flex-grow-1">Entrevista com fundadores sobre a trajetória da organização.</p>
+                                                        <div class="press-source small">Portal Notícias Sociais</div>
+                                                        <a href="#" class="btn btn-sm btn-outline-primary mt-auto" target="_blank" rel="noopener noreferrer">Ler matéria</a> 
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                     </div>
+                                 <div class="row mt-5" data-aos="fade-up">
+                                    <div class="col-lg-8 mx-auto">
+                                        <div class="press-contact text-center p-4 rounded bg-light"> 
+                                            <h3 class="h5 mb-3">Assessoria de Imprensa</h3>
+                                            <p class="small">Jornalistas e veículos de comunicação interessados em nossa atuação:</p>
+                                            <div class="contact-info mt-3 small">
+                                                <p class="mb-1"><strong>Amanda Souza</strong> - Comunicação</p>
+                                                <p class="mb-1"><i class="bi bi-envelope"></i> imprensa@associacaomarsili.org</p>
+                                                <p class="mb-0"><i class="bi bi-telephone"></i> (XX) 9XXXX-XXXX</p>
+                                            </div>
+                                            <a href="documents/kit-imprensa.zip" class="btn btn-primary btn-sm mt-3" download>
+                                                <i class="bi bi-download"></i> Kit de Imprensa
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5 bg-light share-section">
+             <div class="container text-center" data-aos="fade-up">
+                <h2 class="section-title">Compartilhe Nossas Histórias</h2>
+                <p class="lead mb-4">Ajude-nos a ampliar nosso impacto, compartilhando nosso conteúdo</p>
+                
+                <div class="social-share mt-4">
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=URL_DA_PAGINA_MULTIMIDIA" class="btn text-white" style="background-color: #1877F2;" target="_blank" rel="noopener noreferrer"> <i class="bi bi-facebook"></i> Facebook </a>
+                    <a href="https://twitter.com/intent/tweet?url=URL_DA_PAGINA_MULTIMIDIA&text=Veja o trabalho da Associação Marsili!" class="btn text-white" style="background-color: #1DA1F2;" target="_blank" rel="noopener noreferrer"> <i class="bi bi-twitter"></i> Twitter </a>
+                    <a href="https://www.linkedin.com/shareArticle?mini=true&url=URL_DA_PAGINA_MULTIMIDIA&title=Multimídia - Associação Marsili" class="btn text-white" style="background-color: #0A66C2;" target="_blank" rel="noopener noreferrer"> <i class="bi bi-linkedin"></i> LinkedIn </a>
+                    <a href="https://api.whatsapp.com/send?text=Veja o trabalho da Associação Marsili: URL_DA_PAGINA_MULTIMIDIA" class="btn text-white" style="background-color: #25D366;" target="_blank" rel="noopener noreferrer"> <i class="bi bi-whatsapp"></i> WhatsApp </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5 bg-primary text-white contribute-section">
+            <div class="container text-center" data-aos="fade-up">
+                <h2 class="text-white">Faça Parte Desta Transformação</h2>
+                <p class="lead mb-4 text-white-75">Sua contribuição nos ajuda a continuar documentando e compartilhando histórias de impacto</p>
+                <div class="buttons-group">
+                    <a href="doe.html" class="btn btn-light btn-lg">Doe Agora</a>
+                    <a href="como-ajudar.html" class="btn btn-outline-light btn-lg">Outras Formas de Ajudar</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div id="footer-placeholder"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script> <script src="https://cdn.jsdelivr.net/npm/isotope-layout@3/dist/isotope.pkgd.min.js"></script> <script src="js/script.js"></script> <script src="js/loadPartials.js"></script> <script>
+        // Colocando todo o script específico dentro do DOMContentLoaded
+        document.addEventListener('DOMContentLoaded', function() {
+            
+            // Função para inicializar AOS 
+            const initializeAOS = () => {
+                if (typeof AOS !== 'undefined') {
+                    AOS.init({ duration: 800, easing: 'ease-in-out', once: true });
+                } else { 
+                    setTimeout(initializeAOS, 300); 
+                }
+            };
+            setTimeout(initializeAOS, 100); // Chama um pouco depois
+
+             // Função para inicializar GLightbox
+            const initializeGLightbox = () => {
+                if (typeof GLightbox === 'undefined') { console.error("GLightbox library not loaded."); return; }
+                const lightboxImages = GLightbox({ selector: '.glightbox', touchNavigation: true, loop: true });
+                const lightboxVideos = GLightbox({ selector: '.glightbox-video', touchNavigation: true, autoplayVideos: true });
+                console.log("GLightbox Initialized (Multimedia)");
+            };
+
+             // Função para inicializar Isotope
+            const initializeIsotope = () => {
+                 let iso; // Variável para guardar a instância do Isotope
+                 const galleryContainer = document.querySelector('.gallery-container');
+                 if (!galleryContainer || typeof Isotope === 'undefined') {
+                     if(document.getElementById('photos')?.classList.contains('active')) { console.error("Isotope library or .gallery-container not found."); }
+                     return; 
+                 }
+
+                 // Inicializa Isotope
+                 iso = new Isotope(galleryContainer, { itemSelector: '.gallery-item', layoutMode: 'fitRows', filter: '*' });
+
+                 // Filtros
+                 document.querySelectorAll('.gallery-filter button').forEach(button => {
+                     button.addEventListener('click', function() {
+                         document.querySelector('.gallery-filter .active').classList.remove('active');
+                         this.classList.add('active');
+                         iso.arrange({ filter: this.getAttribute('data-filter') });
+                     });
+                 });
+
+                 // Botão "Carregar Mais" (simulado)
+                const loadMoreBtn = document.getElementById('loadMorePhotos');
+                if (loadMoreBtn) {
+                    loadMoreBtn.addEventListener('click', function() {
+                        this.innerHTML = `<span class="spinner-border spinner-border-sm"></span> Carregando...`;
+                        this.disabled = true;
+                        setTimeout(() => {
+                             const newItemHTML = `
+                                 <div class="col-lg-4 col-md-6 gallery-item projetos"> 
+                                     <a href="image/galeria/grande_nova2.jpg" class="glightbox" data-gallery="gallery-marsili" data-title="Nova Foto Projeto">
+                                        <div class="gallery-box"><img src="image/galeria/thumb_nova2.jpg" alt="Nova foto projeto" class="img-fluid" loading="lazy"><div class="gallery-info"><h5 class="h6">Novo Projeto X</h5><p class="small">Data Recente</p><div class="gallery-icon"><i class="bi bi-plus-lg"></i></div></div></div>
+                                     </a>
+                                 </div>`;
+                            
+                             // Cria elemento a partir do HTML
+                             const div = document.createElement('div');
+                             div.innerHTML = newItemHTML.trim();
+                             const newItemElement = div.firstChild;
+
+                             galleryContainer.appendChild(newItemElement); // Adiciona ao DOM
+                             iso.appended(newItemElement); // Informa Isotope
+                             iso.layout(); // Reorganiza layout
+
+                             initializeGLightbox(); // Re-inicializa GLightbox para incluir novo item
+
+                             this.innerHTML = 'Mais Fotos Carregadas (Exemplo)'; 
+                             this.disabled = false; 
+                         }, 1500);
+                    });
+                }
+                 console.log("Isotope Initialized (Multimedia)");
+            };
+
+             // Lógica das Abas (Tabs) do Bootstrap
+            const setupTabs = () => {
+                 const triggerTabList = [].slice.call(document.querySelectorAll('#multimediaTab button'));
+                 triggerTabList.forEach(function (triggerEl) {
+                    const tabTrigger = new bootstrap.Tab(triggerEl);
+                    triggerEl.addEventListener('click', (event) => { event.preventDefault(); tabTrigger.show(); });
+
+                    triggerEl.addEventListener('shown.bs.tab', function(event) {
+                        const targetTabId = event.target.getAttribute('data-bs-target');
+                         // Re-inicializa Isotope/Lightbox APENAS quando a aba relevante é mostrada
+                         if (targetTabId === '#photos') {
+                            // Usa requestAnimationFrame para garantir que o DOM está pronto após a troca de aba
+                            requestAnimationFrame(() => {
+                                initializeIsotope(); 
+                                initializeGLightbox(); // Imagens
+                            });
+                        } else if (targetTabId === '#videos') {
+                             requestAnimationFrame(() => {
+                                initializeGLightbox(); // Vídeos
+                            });
+                        }
+                        // Atualiza hash na URL (opcional, pode causar scroll jump às vezes)
+                        // if(history.replaceState) { history.replaceState(null, null, targetTabId); }
+                    });
+                 });
+
+                // Mostra aba correta ao carregar (pelo hash ou padrão)
+                const hash = window.location.hash;
+                const triggerEl = hash ? document.querySelector(`button[data-bs-target="${hash}"]`) : document.querySelector('#photos-tab'); // Padrão é #photos
+                 if (triggerEl) {
+                     const tabTrigger = new bootstrap.Tab(triggerEl);
+                     tabTrigger.show(); // Mostra a aba inicial
+                     // Dispara manualmente o evento 'shown' para a aba inicial carregar Isotope/Lightbox
+                     triggerEl.dispatchEvent(new Event('shown.bs.tab', { bubbles: true, cancelable: true }));
+                 }
+                 console.log("Tabs Initialized (Multimedia)");
+            };
+
+             // Chamar inicializações específicas DEPOIS que os partials carregarem
+             // Idealmente, coloque isso dentro da função initializePageComponents no script.js
+             const runMultimediaScripts = () => {
+                setupTabs(); 
+                // Isotope e GLightbox serão chamados pela lógica das tabs agora
+             };
+
+            if (typeof initializePageComponents === 'function') {
+                 // Adicionar 'runMultimediaScripts' à lista de funções em initializePageComponents
+                 // Ex: no script.js -> initializePageComponents() { ... runMultimediaScripts(); }
+                 console.warn("Lembre-se de chamar runMultimediaScripts() dentro de initializePageComponents no script.js");
+            } else {
+                 console.warn("initializePageComponents não encontrada. Tentando inicializar scripts Multimídia diretamente.");
+                 setTimeout(runMultimediaScripts, 250); // Delay maior para garantir que partials carregaram
+            }
+            
+        });
+    </script>
+
+</body>
+</html>
